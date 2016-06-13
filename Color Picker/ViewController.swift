@@ -46,18 +46,32 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sldRedACTION(sender: UISlider) {
+        setColors()
     }
 
     @IBAction func sldGreenACTION(sender: UISlider) {
+        setColors()
     }
     
     @IBAction func sldBlueACTION(sender: UISlider) {
+        setColors()
+        
     }
+    
+    
+    func setColors() {
+    }
+    
+    
+    
+    
+    
     
     
     func changeColorLabel(){
     
-        lblColor.backgroundColor = UIColor(red: CGFloat (redColor), green: CGFloat(greenColor), blue: CGFloat(blueColor), alpha: 1.0)
+        lblColor.backgroundColor = UIColor(red: CGFloat (redColor), green: CGFloat(greenColor), blue: CGFloat(blueColor), alpha: 1.0)}
+    
     
     
     
