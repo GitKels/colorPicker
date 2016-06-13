@@ -9,6 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var sldRed: UISlider!
+    
+    @IBOutlet weak var sldGreen: UISlider!
+    
+    @IBOutlet weak var sldBlue: UISlider!
+    
+    
+    @IBOutlet weak var lblRed: UILabel!
+    
+    @IBOutlet weak var lblGreen: UILabel!
+    
+    @IBOutlet weak var lblBlue: UILabel!
+    
+    
+    @IBOutlet weak var lblColor: UILabel!
+    
+    var redColor : Float = 0
+    var greenColor : Float = 0
+    var blueColor : Float = 0
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +45,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func sldRedACTION(sender: UISlider) {
+    }
 
+    @IBAction func sldGreenACTION(sender: UISlider) {
+    }
+    
+    @IBAction func sldBlueACTION(sender: UISlider) {
+    }
+    
+    
+    func changeColorLabel(){
+    
+        lblColor.backgroundColor = UIColor(red: CGFloat (redColor), green: CGFloat(greenColor), blue: CGFloat(blueColor), alpha: 1.0)
+    
+    
+    
+    
+    
 }
 
